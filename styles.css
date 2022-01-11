@@ -93,7 +93,6 @@ header{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     
 }
 
@@ -395,7 +394,9 @@ footer a:hover {
         grid-template-columns: 1fr;
 
     }
-
+    .locacion-maps {
+        height: 0;
+    }
     .galeria-fotos {
         width: 100%;
         display: grid;
