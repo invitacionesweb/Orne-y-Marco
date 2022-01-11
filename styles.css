@@ -3,12 +3,13 @@
     --color-secundario:#9E7846;
     --color-terciario:#ead4be;
     --color-link: #89591b;
-    --font-principal:'Montserrat', sans-serif;   
+    --font-principal: 'Montserrat', sans-serif;  
     --font-secundaria:'Dawning of a New Day', cursive;   
 
 }
 body {
     font-family: var(--font-principal);  
+    font-weight: 400;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,6 +23,22 @@ body h1 {
 
 
 }
+.navbar {
+    animation-duration: 2s;
+    animation-name: nav;
+}
+@keyframes nav {
+    from{
+        transform: translate3d(0,-100%,0);
+        opacity: 0;
+    }
+    to{
+        transform:translate3d(0,0,0); 
+        opacity: 1;
+
+    }
+}
+
 header p {
     font-family: var(--font-principal); 
     color: var(--color-principal);
@@ -45,8 +62,20 @@ header .navbar a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation-duration: 5s;
+    animation-name: texto;
 
 }
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 .header-text p {
     font-size: 2rem;
 
@@ -64,7 +93,6 @@ header{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     
 }
 
@@ -307,7 +335,6 @@ header{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 .dresscode {
     padding: 40px;
