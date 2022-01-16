@@ -21,7 +21,7 @@ body h1 {
     font-family:var(--font-secundaria);
     color: var(--color-principal);
     text-align: center;
-
+    font-weight: 100;
 
 }
 .navbar {
@@ -44,6 +44,7 @@ header p {
     font-family: var(--font-principal); 
     color: var(--color-principal);
     text-align: center;
+    font-weight:  100;
 
 }
 header .navbar {
