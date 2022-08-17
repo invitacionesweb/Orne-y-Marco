@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orne y Marco</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +91,7 @@
             <div class="locacion-cards-items">
                 <img src="ig/rings.png" alt="">
                 <h2>Benditos seamos</h2>
-                <p>Sábado 08-10-22 <br> 11:15 hs. <br>
+                <p>Sábado 08-10-22 <br> 11:45 hs. <br>
                    <b>Capilla Nuestra señora de Lourdes - Córdoba.</b> 
                 </p>
                 <button class="button-a"><a  target="_blank" href="https://www.google.com/maps/place/Capilla+Nuestra+Se%C3%B1ora+de+Lourdes/@-31.009094,-64.2674936,15z/data=!4m5!3m4!1s0x0:0x4022c764b0144d01!8m2!3d-31.009094!4d-64.2674936">Como llegar</a></button>
@@ -150,19 +150,36 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <button class="button-b"><a a target="_blank" href="https://forms.gle/JxhgrZFb1odttAcx7">RSVP</a></button>
         </div>
     </div>
-<div class="divisioncuatro">
-    <div class="dresscode">
-        <h2>Dress code</h2>
+<div class="agradecimiento">
+    <div class="agradecimiento-text">
+        <h1>Dress code</h1>
         <p>Cocktail</p>
     </div>
-
-    <div class="agradecimiento">
-        <div class="agradecimiento-text"> 
-            <H1>Orne & Marco</H1>
-            <p>8 de octubre de 2022</p>
+</div>
+<div class="regalos">
+    <img src="ig/icons8-sobre-de-amor-100.png" alt="">
+    <p>Tu presencia es lo más importante, pero si deseas hacernos un regalo nos gustaria que nos escriban cartas o impriman fotos con deseos y bendiciones para llevarlos a la fiesta. También les pedimos que nos manden fotos y videos de los preparativos con el hashtag de la fiesta </p> <a href="https://www.instagram.com/explore/tags/orneymarcoamoraprimerafiesta/"><b>#OrneyMarcoAmoraPrimeraFiesta</b></a>
+    <br>
+    <br>
+    <p>Si además quieren auspiciar algunas caipirinhas o excursiones en la luna de miel,  sin compromiso les pasamos un alias bancario:</p>
+    <div id="contenedor">
+        <div>
+          <span  id="enlace">AMOR.APRIMERA.FIESTA</span>
+          <button id="copiador"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#B68E87"><path d="M28.66667,14.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333h14.33333v-100.33333h100.33333v-14.33333zM57.33333,43c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v86c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-86c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM57.33333,57.33333h86v86h-86z"></path></g></g></svg></button>
         </div>
     </div>
-   
+    <br>
+    <p>Y si alguien quiere aportar con los pañales del gordo, nos pasan la dirección y les mandamos el camión de caudales. </p>
+    <h2>gracias!</h2>
+</div>
+<div class="agradecimiento">
+    <div class="agradecimiento-text"> 
+        <H1>Orne & Marco</H1>
+        <p>8 de octubre de 2022</p>
+    </div>
 </div>
     <footer>
         <div class="content">
@@ -182,6 +199,28 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        var boton = document.getElementById("copiador");
+  boton.addEventListener("click", copiarAlPortapapeles, false);
+  
+  function copiarAlPortapapeles() {
+  var enlace = document.getElementById("enlace");
+  
+  var inputFalso = document.createElement("input");
+  inputFalso.setAttribute("value", enlace.innerHTML);
+  
+  document.body.appendChild(inputFalso);
+  
+  inputFalso.select();
+  
+  document.execCommand("copy");
+  
+  document.body.removeChild(inputFalso);
+  alert("COPIADO EN EL PORTAPAPELES");
+  }
+  
+    </script>
+  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

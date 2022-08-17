@@ -350,13 +350,80 @@ body p {
     font-family: var(--font-principal);    
 
 }
+.regalos {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 40px;
+    text-align: center;
+}
+.regalos p {
+    max-width: 500px;
+    padding: auto;
+    margin: auto;
+}
+.regalos a {
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+.regalos a:hover {
+    text-decoration: solid;
+    color: var(--color-terciario);
+}
+.regalos a:active {
+    text-decoration: none;
+    color: var(--color-terciario);
+}
 
+.regalos img {
+    width: 50px;
+    padding: 10px;
+}
 .agradecimiento {
     padding: 40px;
     color: var(--color-principal);
     background-color: var(--color-secundario);
     text-align: center;
     
+}
+#contenedor {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor > div {
+    display: flex;
+}
+
+span#enlace {
+    color: var(--color-secundario);
+    font-size: 1em;
+    padding: 8px ;
+    text-align: center;
+    background-color: var(--color-principal);
+
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+
+}
+
+button#copiador {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 8px;    
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+}
+.regalos h2 {
+    font-family: var(--font-secundaria);     
+    font-size: 40PX;
 }
 
 footer {
